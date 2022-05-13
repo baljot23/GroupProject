@@ -1,0 +1,33 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "\"An express application\"",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd client && yarn start",
+    "start:server": "cd server && yarn start",
+    "dev:server": "cd server && yarn dev",
+    "start": "node server/index.js",
+    "heroku-postbuild": "cd server && yarn install && cd ../client && yarn install && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baljot23/project-GROUP-e-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baljot23/project-GROUP-e-commerce/issues"
+  },
+  "homepage": "https://github.com/baljot23/project-GROUP-e-commerce#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}

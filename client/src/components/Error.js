@@ -1,4 +1,4 @@
-import styled from  'styled-components';
+import styled from "styled-components";
 import { FaBomb } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -6,15 +6,13 @@ const Error = () => {
   return (
     <>
       <Wrapper>
-        <FaBomb size="5rem"/>
+        <FaBomb size="5rem" />
         <h1>Oops! This is not what you are looking for.</h1>
-        <StyledLink to="/">Return To Homepage</StyledLink>
+        <StyledLink to="/home">Return To Homepage</StyledLink>
       </Wrapper>
     </>
   );
 };
-
-
 
 const Wrapper = styled.div`
   display: flex;
@@ -33,9 +31,8 @@ const Wrapper = styled.div`
   }
 
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  
 
-  h1{
+  h1 {
     margin-top: 20px;
     font-size: 24px;
   }
@@ -52,14 +49,12 @@ const StyledLink = styled(Link)`
   font-size: 20px;
   border-radius: 10px;
   transition: background-color 0.2s ease-out 20ms;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background-color: lightgray;
     transform: scale(1.1);
   }
-
 `;
-
 
 export default Error;

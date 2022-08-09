@@ -11,7 +11,7 @@ const Confirmation = () => {
   const { purchased } = useContext(StoreContext);
 
   if (!purchased) {
-    history.push("/");
+    history.push("/home");
   }
 
   return (
@@ -24,7 +24,7 @@ const Confirmation = () => {
           You will receive an order confirmation email with details of your
           order.
         </p>
-        <StyledLink to="/">CONTINUE SHOPPING</StyledLink>
+        <StyledLink to="/home">CONTINUE SHOPPING</StyledLink>
       </Wrapper>
     </Main>
   );

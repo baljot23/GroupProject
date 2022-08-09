@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Logo to="/">
+      <Logo to="/home">
         <GiMountedKnight />
         BNTV.
       </Logo>

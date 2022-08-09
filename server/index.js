@@ -28,7 +28,7 @@ express()
   .use(express.static("./server/assets"))
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
-  .use("/", express.static(__dirname + "/"))
+  .use("/home", express.static(__dirname + "/home"))
 
   // REST endpoints?
   .get("/bacon", (req, res) => res.status(200).json("🥓"))

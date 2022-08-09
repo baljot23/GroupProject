@@ -17,7 +17,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/home">
             <HomePage />
           </Route>
           <Route exact path="/item/:_id">
